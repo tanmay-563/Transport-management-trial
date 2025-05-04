@@ -14,29 +14,4 @@ To begin with, users will be shown the names of three types of vehicles after en
 
 **Transport Data Deletion**: The admin deletes data from the system when necessary due to various damages and other reasons caused to vehicles over time.
 
-**Generate report**: Finally, the transport system will be able to generate reports of transporting 
-details activities. 
-.
-.
 
-![WhatsApp Image 2023-05-14 at 17 18 57](https://github.com/Kesh17/transport-management/assets/105196447/470cdca1-0806-4037-bdd5-ef440a6ca857)
-
-
-![WhatsApp Image 2023-05-14 at 17 18 59](https://github.com/Kesh17/transport-management/assets/105196447/c1c141f5-0b5d-4f18-b1ac-8c3da39b0f88)
-
-
-![WhatsApp Image 2023-05-14 at 17 19 56](https://github.com/Kesh17/transport-management/assets/105196447/297ad86f-f003-4bdc-890e-57820293397f)
-
-.
-**MERN_STACK**
-.
-MERN is an acronym that stands for MongoDB, Express.js, React, and Node.js. It is a popular web development stack used to build full-stack JavaScript applications. Each component of the MERN stack serves a specific purpose:
-
-MongoDB: MongoDB is a NoSQL database that stores data in a flexible, JSON-like format called BSON (Binary JSON). It provides scalability, high performance, and schema flexibility, making it suitable for handling large volumes of data.
-
-Express.js: Express.js is a lightweight web application framework for Node.js. It simplifies the process of building web applications and APIs by providing a set of robust features and middleware. Express.js handles routing, middleware management, and server-side logic.
-
-React: React is a JavaScript library for building user interfaces. It enables the creation of interactive and reusable UI components. React uses a virtual DOM (Document Object Model) to efficiently update and render components, resulting in a fast and responsive user interface.
-Node.js: Node.js is a JavaScript runtime built on Chrome's V8 engine. It allows JavaScript to run on the server-side, enabling the development of server applications using JavaScript. Node.js provides an event-driven, non-blocking I/O model, making it efficient and scalable.
-
-......!!!
