@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "client": "npm start --prefix frontend",
+    "server": "npm start --prefix BACKEND",
+    "start": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Oswald:wght@600&display=swap");
+:root {
+  --border-width: 2px;
+}
+
+
+.centered {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+    background: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    color: #000;
+}
+
+h2 {
+  margin-bottom: 0.75rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  opacity: 0.9;
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+p {
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  width: 20rem;
+  height: 24rem;
+  padding: var(--border-width);
+  z-index: 2;
+  border-radius: 1rem;
+  transform: scale(0.98);
+  transition: transform 200ms ease-in-out, z-index 600ms;
+  cursor: pointer;
+}
+.card .content {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  background: #202530;
+  border-radius: calc(1rem - var(--border-width));
+  overflow: hidden;
+}
+.card .content img {
+  width: calc(100% + 2rem);
+  height: 10rem;
+  margin: -1rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  object-position: center;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  height: 30rem;
+  width: 30rem;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(8rem);
+  background: conic-gradient(#12c2e9, #c471ed, #f64f59, #c471ed, #12c2e9);
+  animation: spin-shadow 3s linear infinite;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+.card .border {
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card .border::before {
+  content: "";
+  position: absolute;
+  width: 29rem;
+  height: 29rem;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  background: conic-gradient(#12c2e9, #c471ed, #f64f59, #c471ed, #12c2e9);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  animation: spin 3s linear infinite;
+}
+.card:hover {
+  transform: translateY(-0.5rem);
+  z-index: 3;
+}
+.card:hover::before {
+  opacity: 0.9;
+}
+.card:hover .border::before {
+  opacity: 1;
+}
+a{
+  direction: none;
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: rgb(207, 205, 205);
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes spin-shadow {
+  0% {
+    transform: translate(-50%, calc(-50% + 2rem)) scale(0.5) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, calc(-50% + 2rem)) scale(0.5) rotate(360deg);
+  }
+}

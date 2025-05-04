@@ -1,0 +1,68 @@
+.lorry{
+    padding: 2rem 6rem;
+}
+table{
+    margin-top: 2rem;
+    background-color: rgb(231, 231, 231);
+    
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.updateform{
+    padding-top: 2rem;
+}
+.updatelorry{
+    padding: 3rem 20rem;
+}
+label{
+    display: flex;
+    font-weight: 600;
+    padding-top: 1rem;
+    color: blue;
+}
+.update-btn{
+    margin-top: 1rem;
+    width: 200px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    height: 3rem;
+}
+.modal-form{
+    display: grid;
+    row-gap: 2rem;
+}
+th{
+    color: rgb(28, 3, 139);
+}
+h1{
+    color: rgb(202, 4, 4);
+}
+.van-btn{
+    height: 3rem;
+    width: 300px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(17, 103, 201);
+}
+.delete-btn{
+    color: red;
+}
+.updatee-btn{
+    color: rgb(21, 182, 21);
+}
+.searchinput{
+ display: flex;
+ justify-content: space-between;
+}
+.home-input{
+    width: 500px;
+}
+.texts{
+    width: 200px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
