@@ -14,4 +14,4 @@ To begin with, users will be shown the names of three types of vehicles after en
 
 **Transport Data Deletion**: The admin deletes data from the system when necessary due to various damages and other reasons caused to vehicles over time.
 
-
+Clone the repositary then run npm start 
